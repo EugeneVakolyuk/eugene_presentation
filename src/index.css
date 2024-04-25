@@ -1,0 +1,90 @@
+@import url("https://code.highcharts.com/css/highcharts.css");
+@import url("https://code.highcharts.com/dashboards/css/datagrid.css");
+@import url("https://code.highcharts.com/dashboards/css/dashboards.css");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jersey+10&family=Jersey+15+Charted&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.09), 0px 3px 2px 0px rgba(0, 0, 0, 0.05),
+    0px 6px 2px 0px rgba(0, 0, 0, 0.01);
+}
+
+body {
+  margin: 0;
+  background-color: #f2f2f2ed;
+  font-family: "Nunito", sans-serif;
+}
+
+.highcharts-dashboards-wrapper {
+  font-family: "Nunito", sans-serif;
+  border-radius: 10px;
+  background-color: #EEEEEE;
+  box-shadow: 5px 5px 10px #3d3d3d30;
+  margin-top: 50px;
+
+  --highcharts-background-color: #EEEEEE;
+  --highcharts-neutral-color-100: #222831;
+  --highcharts-neutral-color-80: #222831;
+  --highcharts-neutral-color-60: #31363F;
+  --highcharts-neutral-color-40: #222831;
+  --highcharts-neutral-color-20: #222831;
+  --highcharts-neutral-color-10: #222831;
+  --highcharts-neutral-color-5: #EEEEEE;
+  --highcharts-neutral-color-3: #DDDDDD;
+  --highcharts-neutral-color-0: #222831;
+  --highcharts-highlight-color-100: #6499E9;
+  --highcharts-highlight-color-80: #6499E9;
+  --highcharts-highlight-color-60: #6499E9;
+  --highcharts-highlight-color-20: #6499E9;
+  --highcharts-highlight-color-10: #6499E9;
+}
+
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+button {
+  outline: none;
+}
+
+.highcharts-dashboards-wrapper {
+  padding-top: 40px;
+}
+
+h1#title {
+  padding-top: 10px;
+  margin: 0;
+  background-color: #3d3d3d;
+  text-align: center;
+  color: #fff;
+}
+
+.highcharts-plot-line {
+  stroke-dasharray: 2px;
+  stroke: var(--highcharts-color-3);
+}
+
+.highcharts-plot-line-label {
+  fill: var(--highcharts-color-3);
+}
+
+.title-icon {
+  animation: spin 3s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
